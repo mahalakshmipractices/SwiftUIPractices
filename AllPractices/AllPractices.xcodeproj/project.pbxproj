@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E9F4B02B51EC2800432010 /* ListPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F4AF2B51EC2800432010 /* ListPostsView.swift */; };
 		40FB78BA2B4DC72800E387F4 /* AllPracticesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB78B92B4DC72800E387F4 /* AllPracticesApp.swift */; };
 		40FB78BC2B4DC72800E387F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB78BB2B4DC72800E387F4 /* ContentView.swift */; };
 		40FB78BE2B4DC72B00E387F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FB78BD2B4DC72B00E387F4 /* Assets.xcassets */; };
@@ -19,6 +20,9 @@
 		40FB79C72B50957A00E387F4 /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79C62B50957A00E387F4 /* String+Validations.swift */; };
 		40FB79D12B50961B00E387F4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79D02B50961B00E387F4 /* RegistrationViewModel.swift */; };
 		40FB79D32B50962500E387F4 /* RegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79D22B50962500E387F4 /* RegistrationFormView.swift */; };
+		40FB79D92B51A8B500E387F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79D82B51A8B500E387F4 /* Post.swift */; };
+		40FB79DB2B51A95F00E387F4 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79DA2B51A95F00E387F4 /* PostViewModel.swift */; };
+		40FB79DE2B51A9DC00E387F4 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79DD2B51A9DC00E387F4 /* NetworkServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40E9F4AF2B51EC2800432010 /* ListPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsView.swift; sourceTree = "<group>"; };
+		40E9F4B12B51EF7C00432010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		40FB78B62B4DC72800E387F4 /* AllPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40FB78B92B4DC72800E387F4 /* AllPracticesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPracticesApp.swift; sourceTree = "<group>"; };
 		40FB78BB2B4DC72800E387F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 		40FB79C62B50957A00E387F4 /* String+Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
 		40FB79D02B50961B00E387F4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		40FB79D22B50962500E387F4 /* RegistrationFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFormView.swift; sourceTree = "<group>"; };
+		40FB79D82B51A8B500E387F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		40FB79DA2B51A95F00E387F4 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		40FB79DD2B51A9DC00E387F4 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +113,14 @@
 		40FB78B82B4DC72800E387F4 /* AllPractices */ = {
 			isa = PBXGroup;
 			children = (
+				40E9F4B12B51EF7C00432010 /* Info.plist */,
+				40FB79DC2B51A97A00E387F4 /* NetworkServices */,
 				40FB78E82B4DC78500E387F4 /* Extensions */,
 				40FB78E32B4DC75100E387F4 /* CustomViews */,
 				40FB78B92B4DC72800E387F4 /* AllPracticesApp.swift */,
 				40FB78BB2B4DC72800E387F4 /* ContentView.swift */,
 				40FB79CC2B5095F100E387F4 /* RegistrationForm */,
+				40FB79D42B51A86E00E387F4 /* ListPostsFromAPI */,
 				40FB78BD2B4DC72B00E387F4 /* Assets.xcassets */,
 				40FB78BF2B4DC72B00E387F4 /* Preview Content */,
 			);
@@ -188,6 +200,48 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		40FB79D42B51A86E00E387F4 /* ListPostsFromAPI */ = {
+			isa = PBXGroup;
+			children = (
+				40FB79D72B51A89D00E387F4 /* Model */,
+				40FB79D62B51A89700E387F4 /* View */,
+				40FB79D52B51A88F00E387F4 /* ViewModel */,
+			);
+			path = ListPostsFromAPI;
+			sourceTree = "<group>";
+		};
+		40FB79D52B51A88F00E387F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40FB79DA2B51A95F00E387F4 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40FB79D62B51A89700E387F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40E9F4AF2B51EC2800432010 /* ListPostsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40FB79D72B51A89D00E387F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40FB79D82B51A8B500E387F4 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40FB79DC2B51A97A00E387F4 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				40FB79DD2B51A9DC00E387F4 /* NetworkServiceManager.swift */,
+			);
+			path = NetworkServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,11 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E9F4B02B51EC2800432010 /* ListPostsView.swift in Sources */,
 				40FB78E52B4DC75F00E387F4 /* ValidatedTextField.swift in Sources */,
 				40FB79D12B50961B00E387F4 /* RegistrationViewModel.swift in Sources */,
 				40FB79D32B50962500E387F4 /* RegistrationFormView.swift in Sources */,
+				40FB79D92B51A8B500E387F4 /* Post.swift in Sources */,
 				40FB79C72B50957A00E387F4 /* String+Validations.swift in Sources */,
 				40FB78BC2B4DC72800E387F4 /* ContentView.swift in Sources */,
+				40FB79DE2B51A9DC00E387F4 /* NetworkServiceManager.swift in Sources */,
+				40FB79DB2B51A95F00E387F4 /* PostViewModel.swift in Sources */,
 				40FB78BA2B4DC72800E387F4 /* AllPracticesApp.swift in Sources */,
 				40FB78E72B4DC77E00E387F4 /* ValidatedSecureTextField.swift in Sources */,
 			);
@@ -492,6 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AllPractices/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllPractices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +579,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AllPractices/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllPractices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

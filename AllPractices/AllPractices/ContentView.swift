@@ -19,6 +19,14 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                NavigationLink(destination: ListPostsView()) {
+                    Text("Posts")
+                        .frame(width: 200, height: 20)
+                        .padding()
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
                 .padding()
             }
         }
