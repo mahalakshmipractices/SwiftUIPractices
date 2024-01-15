@@ -15,13 +15,16 @@ struct ListPostsView: View {
             List(postViewModel.post, id:\.id) { post in
                 VStack {
                     Text(post.title)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .font(.subheadline)
                     Text(post.body)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .font(.body)
                         .foregroundColor(.gray)
                 }
             }
             .navigationTitle("Posts")
+            .listStyle(PlainListStyle())
             .onAppear {
                 self.postViewModel.fetchPosts()
             }

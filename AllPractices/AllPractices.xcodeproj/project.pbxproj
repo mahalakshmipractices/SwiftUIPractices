@@ -23,6 +23,7 @@
 		40FB79D92B51A8B500E387F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79D82B51A8B500E387F4 /* Post.swift */; };
 		40FB79DB2B51A95F00E387F4 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79DA2B51A95F00E387F4 /* PostViewModel.swift */; };
 		40FB79DE2B51A9DC00E387F4 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB79DD2B51A9DC00E387F4 /* NetworkServiceManager.swift */; };
+		9215282E2B5207F000A6D5F0 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9215282D2B5207F000A6D5F0 /* PostRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		40FB79D82B51A8B500E387F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		40FB79DA2B51A95F00E387F4 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		40FB79DD2B51A9DC00E387F4 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		9215282D2B5207F000A6D5F0 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				40E9F4AF2B51EC2800432010 /* ListPostsView.swift */,
+				9215282D2B5207F000A6D5F0 /* PostRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				40FB78BC2B4DC72800E387F4 /* ContentView.swift in Sources */,
 				40FB79DE2B51A9DC00E387F4 /* NetworkServiceManager.swift in Sources */,
 				40FB79DB2B51A95F00E387F4 /* PostViewModel.swift in Sources */,
+				9215282E2B5207F000A6D5F0 /* PostRowView.swift in Sources */,
 				40FB78BA2B4DC72800E387F4 /* AllPracticesApp.swift in Sources */,
 				40FB78E72B4DC77E00E387F4 /* ValidatedSecureTextField.swift in Sources */,
 			);
